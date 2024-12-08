@@ -1,0 +1,53 @@
+{% extends "eventapp/base.html" %}
+
+{% block content %}
+<h1>We'd Love Your Feedback</h1>
+<div class="feedback-form">
+    <form method="POST">
+        {% csrf_token %}
+        <!-- Emoji Feedback -->
+        <div class="emoji">
+            <p>Will You Come Back?</p>
+            <input type="radio" id="very-bad" name="emoji" value="1">
+            <label for="very-bad">&#128545;</label>
+            <input type="radio" id="bad" name="emoji" value="2">
+            <label for="bad">&#128533;</label>
+            <input type="radio" id="neutral" name="emoji" value="3">
+            <label for="neutral">&#128528;</label>
+            <input type="radio" id="good" name="emoji" value="4">
+            <label for="good">&#128578;</label>
+            <input type="radio" id="very-good" name="emoji" value="5">
+            <label for="very-good">&#128512;</label>
+        </div>
+
+        <!-- Star Rating -->
+        <div class="rating">
+            <p>How Would You Rate Our Food?</p>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+
+        <!-- Thumbs Up/Down -->
+        <div class="thumbs">
+            <p>Will You Recommend Us to Friends?</p>
+            <input type="radio" id="thumb-up" name="thumbs" value="up">
+            <label for="thumb-up">&#128077;</label>
+            <input type="radio" id="thumb-down" name="thumbs" value="down">
+            <label for="thumb-down">&#128078;</label>
+        </div>
+
+        <!-- Comments -->
+        <textarea name="comments" rows="4" placeholder="Your remarks here..." required></textarea><br>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+{% endblock %}

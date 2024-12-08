@@ -1,0 +1,167 @@
+{% extends 'eventapp/base.html' %}
+{% load static %}
+
+{% block title %}Spotlight Your Brand | Event Mobile App{% endblock %}
+
+{% block content %}
+
+<!-- Event Mobile App Section -->
+<div class="py-5" style="background: url('{% static 'images/lightblue.png' %}') no-repeat center center/cover;">
+    <div class="container text-white">
+        <div class="row align-items-center">
+            <!-- Text Section -->
+            <div class="col-md-6">
+                <p class="fw-bold text-uppercase">Event Mobile App</p>
+                <h1 class="display-4 fw-bold">A Portable Event Hub For Your Attendees</h1>
+                <p class="lead mt-3">
+                    Help attendees manage their event experience, network, and engage with exhibitors.
+                </p>
+                <div class="mt-4">
+                    <a href="{% url 'register' %}" class="btn btn-warning btn-lg text-dark me-3 fw-bold">Request a Demo</a>
+                </div>
+                <div class="d-flex align-items-center mt-4">
+                    <div class="me-3 text-center">
+                        <img src="{% static 'images/g2-logo.png' %}" alt="G2 Logo" class="img-fluid" style="width: 50px;">
+                        <p class="mt-2 fw-bold">4.8 / 5 (109 Ratings)</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="{% static 'images/rating logo.jpg' %}" alt="Rating Logo" class="img-fluid" style="width: 50px;">
+                        <p class="mt-2 fw-bold">4.7 / 5 (148 Ratings)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-md-6 text-center">
+                <img src="{% static 'images/management.jpg' %}" alt="Event App Mockup" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials and Features Section -->
+<div class="bg-light py-5">
+    <div class="container text-center">
+        <!-- Testimonial Section -->
+        <div class="row mb-5">
+            <div class="col">
+                <blockquote class="blockquote">
+                    <p class="fs-4 fst-italic">"There's SO MUCH that goes into hosting a virtual event for 1,500+ people, and Accelevents makes it easier with their clear and intuitive platform. Plus, they integrate with Zapier, which opens up so many possibilities!"</p>
+                    <footer class="blockquote-footer">
+                        <strong>Dave F.</strong> <cite title="Source Title">Motivating Systems</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h4 class="fw-bold">End-to-end virtual event technology</h4>
+                <p>Power your virtual experiences with a single platform for everything, from registration to post-event marketing.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="fw-bold">A flexible platform for a global world</h4>
+                <p>Host large virtual conferences or hybrid events. Connect globally while ensuring the best attendee experience.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="fw-bold">Low-stress, high-performance features</h4>
+                <p>Create an engaging event experience with breakout rooms, live chat, and advanced features that ensure attendee satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Spotlight Your Brand Section -->
+<div class="py-5" style="background-color: #3b82f6; color: #fff; width: 100vw; margin-left: calc(-50vw + 50%); padding: 50px 0;">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Section: Mobile Screens -->
+            <div class="col-md-6 text-center">
+                <img src="{% static 'images/event management.jpg' %}" alt="App Screens" class="img-fluid rounded">
+            </div>
+
+            <!-- Right Section: Text Content -->
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bold">A mobile app that spotlights your brand</h1>
+                <p class="lead mt-3">
+                    Amplify your branding with an app that is uniquely yours:
+                </p>
+                <ul>
+                    <li>Personalize the app name, logo, and visuals to reflect the look and feel of your brand.</li>
+                    <li>Showcase your branded app in the App Store and Google Play under your own developer account.</li>
+                </ul>
+                <a href="https://support.accelevents.com/en/articles/8341716-white-label-attendee-app-requirements?_gl=1*1kbnxe6*_gcl_au*MjA4ODI1MDAxNy4xNzMzMjkzNjEyLjE5NDU2MTYzMDMuMTczMzQwMzcxNS4xNzMzNDAzNzIy*_ga*MTA2MTE2NzUyMS4xNzMzMjkzNjEy*_ga_PHMVJKV91X*MTczMzU4OTQxOS4xNC4xLjE3MzM1OTA2NTkuNjAuMC4w&_ga=2.94687388.1090821134.1733401572-1061167521.1733293612" class="btn btn-dark btn-lg mt-3">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="container py-5">
+    <h1 class="text-center mb-4">FAQ</h1>
+    <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    01. Does the Mobile App for Attendees work on iPhone and Android mobile phones?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes, the Mobile App works seamlessly on both iPhone and Android devices, providing a consistent experience for all users.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    02. Can a mobile app increase attendee engagement?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Absolutely! The app offers networking tools, live polling, Q&A sessions, and interactive exhibitor features to boost engagement.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    03. How much does the mobile app for attendees cost?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Pricing depends on the event's size and features. Contact us for a detailed quote tailored to your needs.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    04. Does Accelevents work for large-size events?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes, Accelevents is designed to handle events of any size, including large-scale conferences with thousands of attendees.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    05. Does Accelevents support in-person and online events?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes, Accelevents supports both in-person and online events, making it a versatile solution for hybrid formats.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

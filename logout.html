@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background styling */
+        .background {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Logout box styling */
+        .logout-box {
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+            border-radius: 10px;
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            color: white;
+        }
+
+        .logout-box h2 {
+            margin-bottom: 30px;
+        }
+
+        /* Button styling */
+        .logout-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f44336; /* Red background for logout */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .logout-box button:hover {
+            background-color: #d32f2f; /* Darker red on hover */
+        }
+
+        /* Cancel link styling */
+        .logout-box a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .logout-box a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="background" style="background-image: url('https://cdn.wallpapersafari.com/68/67/pF2zIS.jpg');">
+        <div class="logout-box">
+            <h2>Logout</h2>
+            <p>Are you sure you want to log out?</p>
+            <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button type="submit">Logout</button>
+            </form>
+            <div style="margin-top: 20px;">
+
+                <a href="{% url 'logout' %}">Cancel Logout</a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

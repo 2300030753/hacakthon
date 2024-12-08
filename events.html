@@ -1,0 +1,79 @@
+{% extends 'eventapp/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <!-- Event 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+                <img src="https://www.openreel.com/wp-content/uploads/2022/04/iStock-1318224799-1.jpg" class="card-img-top" alt="Event Image">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Training Sessions</h5>
+                    <p class="card-text text-muted">Interactive tools like whiteboards and screen sharing.. It's an exciting event you won't want to miss!</p>
+                    <a href="{% url 'book_event' 'Event 1' %}" class="btn btn-info text-white rounded-pill px-4 py-2">Book Event</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+                <img src="https://thumbs.dreamstime.com/b/virtual-video-conference-business-meeting-computer-251089672.jpg" class="card-img-top" alt="Event Image">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Virtual Conferences</h5>
+                    <p class="card-text text-muted">Networking features like chat, forums, or one-on-one meetings.! A fantastic opportunity to network and learn.</p>
+                    <a href="{% url 'book_event' 'Event 2' %}" class="btn btn-info text-white rounded-pill px-4 py-2">Book Event</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+                <img src="https://www.vividsnaps.com/wp-content/uploads/2020/06/Webinar-Marketing.jpg" class="card-img-top" alt="Event Image">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Webinars</h5>
+                    <p class="card-text text-muted">Real-time attendee interaction through Q&A or polls.it is a chance to experience something new and exciting!</p>
+                    <a href="{% url 'book_event' 'Event 3' %}" class="btn btn-info text-white rounded-pill px-4 py-2">Book Event</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+                <img src="https://dreamcast.co/blog/wp-content/uploads/2022/05/Virtual-Trade-Show-The-Only-Guide-You-Need-1.png" class="card-img-top" alt="Event Image">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary"> Virtual Trade Shows</h5>
+                    <p class="card-text text-muted">Virtual booths with product demos, videos, and brochures! It's packed with exciting opportunities.</p>
+                    <a href="{% url 'book_event' 'Event 4' %}" class="btn btn-info text-white rounded-pill px-4 py-2">Book Event</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+                <img src="https://blog.donately.com/content/images/2022/03/Online-Fundraising_Feature-1.png" class="card-img-top" alt="Event Image">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Fundraising Events</h5>
+                    <p class="card-text text-muted">Interactive storytelling or presentations about the cause! Reserve your spot now.</p>
+                    <a href="{% url 'book_event' 'Event 5' %}" class="btn btn-info text-white rounded-pill px-4 py-2">Book Event</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+                <img src="https://www.evenesis.com/wp-content/uploads/product-launch-event.jpg" class="card-img-top" alt="Event Image">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Product Launches</h5>
+                    <p class="card-text text-muted">Social media integration for real-time buzz! Join us for an unforgettable experience.</p>
+                    <a href="{% url 'book_event' 'Event 6' %}" class="btn btn-info text-white rounded-pill px-4 py-2">Book Event</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
